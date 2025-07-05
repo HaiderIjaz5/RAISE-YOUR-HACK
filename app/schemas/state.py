@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Optional, Literal
+from app.schemas.planner_input import PlannerInput  # import the model
 
 
 class AgentState(BaseModel):
@@ -7,3 +8,4 @@ class AgentState(BaseModel):
     next_step: Optional[
         Literal["scrape", "google_search", "service", "planner", "book"]
     ] = None
+    planner_input: Optional[PlannerInput] = None  # 👈 Key line
