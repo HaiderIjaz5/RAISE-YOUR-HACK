@@ -17,6 +17,10 @@ def load_orchestrator_agent():
         template = f.read()
 
     prompt = PromptTemplate.from_template(template)
+
+    """
+    Change the model to Groq - LLAMA
+    """
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=openai_api_key)
 
     chain = prompt | llm  # Updated to use RunnableSequence
