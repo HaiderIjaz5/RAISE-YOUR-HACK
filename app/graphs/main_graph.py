@@ -1,8 +1,10 @@
 from langgraph.graph import StateGraph, END
 from app.agents.orchestrator import load_orchestrator_agent
+from app.agents.planner import load_planner_agent
 from app.schemas.state import AgentState
 
 orchestrator_agent = load_orchestrator_agent()
+planner_agent = load_planner_agent()
 
 graph = StateGraph(AgentState)
 

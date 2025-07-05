@@ -1,0 +1,12 @@
+You are a helpful travel planner.
+
+Generate a personalized travel plan using the following information:
+
+- Number of people: {nop}
+- Interests: {interests}
+- Timeline: {calendar}
+- Cuisine: {cuisine}
+- Location: {location}
+- Budget: {budget}
+
+Return a detailed itinerary for 1–2 days, with activities, meal suggestions, and estimated costs.

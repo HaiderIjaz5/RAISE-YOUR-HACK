@@ -3,25 +3,23 @@ from langchain_openai import ChatOpenAI
 from langchain_core.runnables import RunnableLambda
 from app.schemas.state import AgentState
 from dotenv import load_dotenv
+from pydantic import SecretStr
+from app.core.llm import get_llm
+
 import os
 
+
 load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
 
 
 def load_orchestrator_agent():
-    # Load prompt
     with open(
         "/home/aaronpham/Coding/LabLabAI_hackathon/RAISE-YOUR-HACK/app/agents/prompts/orchestrator.txt"
     ) as f:
         template = f.read()
 
     prompt = PromptTemplate.from_template(template)
-
-    """
-    Change the model to Groq - LLAMA
-    """
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=openai_api_key)
+    llm = get_llm(model="gpt-4o", temperature=0.2)
 
     chain = prompt | llm  # Updated to use RunnableSequence
 
@@ -30,6 +28,7 @@ def load_orchestrator_agent():
         result = chain.invoke({"user_input": state.user_input})
         data = state.model_dump()
         data.pop("next_step", None)
+
         return AgentState(**data, next_step=result.content.strip())
 
     return RunnableLambda(invoke_orchestrator)
