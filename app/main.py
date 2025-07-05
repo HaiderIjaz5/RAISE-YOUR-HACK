@@ -17,7 +17,7 @@
 #     return result
 
 from fastapi import APIRouter, FastAPI
-from app.agents.planner import load_planner_agent
+from app.agents.planner.planner import load_planner_agent
 from app.schemas.state import AgentState
 
 router = APIRouter()

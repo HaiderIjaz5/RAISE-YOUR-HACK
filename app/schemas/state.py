@@ -8,7 +8,9 @@ class AgentState(BaseModel):
     next_step: Optional[
         Literal["scrape", "google_search", "service", "planner", "book"]
     ] = None
-    planner_input: Optional[PlannerInput] = None
 
+    # Input
+    planner_input: Optional[PlannerInput] = None
+    # Output
     plan: Optional[str] = None
     itinerary: Optional[List[Dict[str, Any]]] = None
