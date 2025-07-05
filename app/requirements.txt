@@ -1,0 +1,8 @@
+app==0.0.1
+fastapi==0.115.14
+langchain==0.3.26
+langchain_core==0.3.68
+langchain_openai==0.3.27
+langgraph==0.5.1
+pydantic==2.11.7
+python-dotenv==1.1.1
