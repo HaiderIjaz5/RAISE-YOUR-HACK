@@ -7,14 +7,14 @@ class ScraperModule:
     
     def scrape_google_maps(self, place_queries: List[str]) -> List[Dict]:
         try:
-            # Use Outscraper Google Places v3 API with speed optimization
+            # Use Outscraper Google Places v3 API
             results = self.client.google_maps_search(
-                query=place_queries,  # Support batching up to 250 queries
-                limit=10,  # Set to 10 for maximum speed as per docs
+                query=place_queries, 
+                limit=10, 
                 language='en',
                 region='US',
-                dropDuplicates=True,  # Remove duplicates across queries
-                async_request=False  # Real-time API for fast response
+                dropDuplicates=True, 
+                async_request=False 
             )
             
             detailed_places = []
