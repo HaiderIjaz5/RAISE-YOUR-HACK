@@ -5,10 +5,6 @@ from app.schemas.state import AgentState
 from dotenv import load_dotenv
 from pydantic import SecretStr
 from app.core.llm import get_llm
-import os
-
-
-load_dotenv()
 
 
 def load_orchestrator_agent():
@@ -18,7 +14,7 @@ def load_orchestrator_agent():
         template = f.read()
 
     prompt = PromptTemplate.from_template(template)
-    llm = get_llm(model="gpt-4o", temperature=0.2)
+    llm = get_llm(model="gpt-4o-mini", temperature=0.2)
 
     chain = prompt | llm  # Updated to use RunnableSequence
 
