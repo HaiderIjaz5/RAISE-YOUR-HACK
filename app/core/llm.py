@@ -1,14 +1,16 @@
-from langchain_openai import ChatOpenAI
-from pydantic import SecretStr
+from groq import Groq
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
+def get_llm(model: str = "meta-llama/llama-4-scout-17b-16e-instruct", temperature: float = 0.3):
 
-def get_llm(model: str = "gpt-4o-mini", temperature: float = 0.3) -> ChatOpenAI:
-    return ChatOpenAI(
-        model=model,
-        temperature=temperature,
-        api_key=SecretStr(os.getenv("OPENAI_API_KEY", "")),
-    )
+    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
+
+    return {
+        "client": client,
+        "model": model,
+        "temperature": temperature
+    }
