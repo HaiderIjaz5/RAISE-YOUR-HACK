@@ -35,8 +35,11 @@ def load_planner_agent():
 
         plan_summary = content.replace(match.group(), "") if match else content
 
-        return AgentState(
-            **{**state.model_dump(), "plan": plan_summary, "itinerary": itinerary_json}
-        )
+        # Define a good structure for the output result
+        state_dict = state.model_dump()
+        state_dict["plan"] = plan_summary
+        state_dict["itinerary"] = itinerary_json
+
+        return AgentState(**state_dict)
 
     return RunnableLambda(invoke)
