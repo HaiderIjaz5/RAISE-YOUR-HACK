@@ -9,5 +9,5 @@ python-dotenv==1.1.1
 requests==2.31.0
 outscraper==3.0.9
 google-api-python-client==2.108.0
-facebook-sdk==3.1.0
 openai==1.3.0
+beautifulsoup4==4.12.2
