@@ -1,34 +1,16 @@
-# from fastapi import FastAPI, Body
-# from app.graphs.main_graph import compiled_graph
-# from app.schemas.state import AgentState
-# from pydantic import BaseModel
-
-# app = FastAPI()
-
-
-# class UserQuery(BaseModel):
-#     input: str
-
-
-# @app.post("/run")
-# def run_graph(request: UserQuery):
-#     state = AgentState(user_input=request.input)
-#     result = compiled_graph.invoke(state)
-#     return result
-
 from fastapi import APIRouter, FastAPI
-from app.agents.planner.planner import load_planner_agent
-from app.schemas.state import AgentState
+from agents.planner import load_planner_agent
+from schemas.state import AgentState
 
 router = APIRouter()
 
-
+# 👉 Endpoint to test planner agent
 @router.post("/planner/test")
 def test_planner_agent(state: AgentState):
-    planner = load_planner_agent()
-    result = planner.invoke(state)
-    return result
+    planner = load_planner_agent()  # Direct function
+    result = planner(state)         # ✅ Correct: Direct function call, no .invoke
+    return result                   # FastAPI will auto-serialize AgentState to JSON
 
-
+# 👉 FastAPI app setup
 app = FastAPI()
 app.include_router(router)
