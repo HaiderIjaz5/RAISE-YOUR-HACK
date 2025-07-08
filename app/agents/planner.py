@@ -12,7 +12,6 @@ def load_planner_agent():
     Planner Agent: Suggests places to visit and calculates budget using database info.
     """
 
-    # ✅ Dynamically load the prompt file from: app/agents/prompts/planners.txt
     current_dir = os.path.dirname(__file__)  # This is app/agents
     prompt_path = os.path.join(current_dir, "prompts", "planners.txt")
 
@@ -20,7 +19,10 @@ def load_planner_agent():
         template = f.read()
 
     # Load Groq LLM configuration
-    llm_config = get_llm(model="meta-llama/llama-4-scout-17b-16e-instruct", temperature=0.2)
+    llm_config = get_llm(
+        model="meta-llama/llama-4-scout-17b-16e-instruct", temperature=0.2
+    )
+
     client = llm_config["client"]
     model = llm_config["model"]
     temperature = llm_config["temperature"]
@@ -39,7 +41,7 @@ def load_planner_agent():
             temperature=temperature,
             max_completion_tokens=1024,
             top_p=1,
-            stream=False
+            stream=False,
         )
 
         content = completion.choices[0].message.content
@@ -52,7 +54,6 @@ def load_planner_agent():
 
         plan_summary = content.replace(match.group(), "") if match else content
 
-        # 🔥 Trigger the n8n Calendar Manager webhook
         if itinerary_json:
             event = itinerary_json[0]  # Picking the first event for demo
             webhook_response = trigger_n8n_calendar_manager(
@@ -61,7 +62,7 @@ def load_planner_agent():
                 start=event.get("start"),
                 end=event.get("end"),
                 description=event.get("description", ""),
-                location=event.get("location", "")
+                location=event.get("location", ""),
             )
             print("Webhook response:", webhook_response)
         else:
