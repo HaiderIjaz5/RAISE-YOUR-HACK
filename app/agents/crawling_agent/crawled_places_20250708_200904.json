@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Nhà hàng Bếp",
+    "address": "17 Nguyễn Thái Học, Hải Châu, Đà Nẵng 550000, Vietnam",
+    "phone": "+84 389 683 835",
+    "website": "",
+    "rating": 4.6,
+    "reviews_count": 916,
+    "category": "Korean restaurant",
+    "price_level": "",
+    "coordinates": {
+      "lat": 16.0678104,
+      "lng": 108.22433749999999
+    },
+    "google_maps_link": "https://maps.google.com/maps/search/Nh%C3%A0%20h%C3%A0ng%20B%E1%BA%BFp%2C%2017%20Nguy%E1%BB%85n%20Th%C3%A1i%20H%E1%BB%8Dc%2C%20H%E1%BA%A3i%20Ch%C3%A2u%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng%20550000%2C%20Vietnam/",
+    "review_content": {
+      "reviews": [
+        {
+          "text": "Just discovered an incredible Vietnamese restaurant that's redefining convenience and consistency in Da Nang - NHA BEP! One minute from Han Market, this place is a breath of fresh air (literally!) after hot market shopping sessions.\nWhat first catches your eye is their impressive wall of wooden menu boards, packed with endless options. But here's the real surprise - despite their extensive menu, every single dish consistently hits above average. No disappointments here!\nThe most mind-blowing part? Their lightning-fast service. We're talking about food arriving at your table within 5 minutes of ordering. Yes, you read that right - FIVE minutes! In all my food adventures, I've never seen such efficiency without compromising quality.\nAfter sweating through Han Market's bustling alleys, stepping into NHA BEP's air-conditioned space feels like finding an oasis. The cool atmosphere is perfectly complemented by their warm service and reliable food quality.\nThe beauty of NHA BEP lies in its simplicity - they're not trying to be fancy or extraordinary. Instead, they focus on delivering consistently good Vietnamese dishes with unbelievable speed. Every item on their extensive menu is reliably tasty, hitting that sweet spot of quality that keeps you coming back for more",
+          "rating": 5.0,
+          "author": "Jason lee",
+          "date": "6 months ago",
+          "source": "serpapi"
+        },
+        {
+          "text": "The soup was good. Meat was not fresh. Service was rather poor. Many staff around but takes super long to get their attention.",
+          "rating": 3.0,
+          "author": "chen ruilin",
+          "date": "a week ago",
+          "source": "serpapi"
+        },
+        {
+          "text": "It’s such a shock to find not even one staff in this restaurant can speak English. We arrived around 6pm and there was a notice in Korean at the entrance downstairs, when we went into the restaurant above, no customers there with three staffs only. I wanted to check what’s said on the notice, and they kept on speaking Korean to me although I told them I don’t speak Korean, this was super annoying. I have been to Seoul five times, and staffs in their local restaurants can speak basic English.\nAvoid this restaurant if you are not a Korean speaker. Very disappointing.",
+          "rating": 1.0,
+          "author": "Joyce Liu",
+          "date": "5 months ago",
+          "source": "serpapi"
+        },
+        {
+          "text": "Update: the following morning I had the worst food poisoning of my life. I wish I stayed clear of this restaurant.\n\n—-\n\nThe dish I ordered was terrible.\nTasteless, chewy  (in a bad way) and cold.\n\nWaiters also noticed we weren’t enjoying our food (we left in the table an entire dish untouched) and still made us pay full price. Not even a discount!!!!\n\nNot the best way make a costumer happy.\n\nGo to another restaurant if you want to have a good lunch or dinner… trust me.",
+          "rating": 1.0,
+          "author": "Giorgio Tavazza",
+          "date": "Edited a year ago",
+          "source": "serpapi"
+        },
+        {
+          "text": "We had the Korean barbecue and it was delicious!! The staff was also attentive and kind.",
+          "rating": 5.0,
+          "author": "Marianna Golembiewski",
+          "date": "7 months ago",
+          "source": "serpapi"
+        },
+        {
+          "text": "Nice Korean restaurant. Tastes just like in Korea. Staff very fast with serving, keeping an eye if something is needed. Portion sizes were good.",
+          "rating": 5.0,
+          "author": "Stephan van dijk",
+          "date": "a year ago",
+          "source": "serpapi"
+        },
+        {
+          "text": "It's a Korean restaurant, but they don't refill side dishes.",
+          "rating": 1.0,
+          "author": "S. KIM",
+          "date": "6 months ago",
+          "source": "serpapi"
+        },
+        {
+          "text": "Amazing taste! Very authentic Korean food in Da Nang.  I'm very happy to experience the good food.",
+          "rating": 5.0,
+          "author": "William Hermet",
+          "date": "a year ago",
+          "source": "serpapi"
+        }
+      ],
+      "review_summary": "",
+      "total_reviews": 8,
+      "average_rating": 3.25
+    },
+    "hours": "Open ⋅ Closes 12 AM",
+    "place_id": "ChIJBW5bmIMZQjER0zjjQiukdE8",
+    "verified": true,
+    "business_status": "OPERATIONAL",
+    "raw_serpapi_data": {
+      "position": 1,
+      "title": "Nhà hàng Bếp",
+      "place_id": "ChIJBW5bmIMZQjER0zjjQiukdE8",
+      "data_id": "0x31421983985b6e05:0x4f74a42b42e338d3",
+      "data_cid": "5725381532007479507",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x31421983985b6e05%3A0x4f74a42b42e338d3&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x31421983985b6e05%3A0x4f74a42b42e338d3&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 16.0678104,
+        "longitude": 108.22433749999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJBW5bmIMZQjER0zjjQiukdE8",
+      "provider_id": "/g/11l6q93hzl",
+      "rating": 4.6,
+      "reviews": 916,
+      "type": "Korean restaurant",
+      "types": [
+        "Korean restaurant"
+      ],
+      "type_id": "korean_restaurant",
+      "type_ids": [
+        "korean_restaurant"
+      ],
+      "address": "17 Nguyễn Thái Học, Hải Châu, Đà Nẵng 550000, Vietnam",
+      "open_state": "Open ⋅ Closes 12 AM",
+      "hours": "Open ⋅ Closes 12 AM",
+      "operating_hours": {
+        "tuesday": "8 AM–12 AM",
+        "wednesday": "8 AM–12 AM",
+        "thursday": "8 AM–12 AM",
+        "friday": "8 AM–12 AM",
+        "saturday": "8 AM–12 AM",
+        "sunday": "8 AM–12 AM",
+        "monday": "8 AM–12 AM"
+      },
+      "phone": "+84 389 683 835",
+      "extensions": [
+        {
+          "from_the_business": [
+            "Identifies as women-owned"
+          ]
+        },
+        {
+          "service_options": [
+            "No-contact delivery",
+            "Delivery",
+            "Drive-through",
+            "Takeout",
+            "Dine-in"
+          ]
+        },
+        {
+          "highlights": [
+            "Great beer selection"
+          ]
+        },
+        {
+          "popular_for": [
+            "Lunch",
+            "Dinner",
+            "Solo dining"
+          ]
+        },
+        {
+          "offerings": [
+            "Alcohol",
+            "Beer",
+            "Quick bite",
+            "Small plates"
+          ]
+        },
+        {
+          "dining_options": [
+            "Lunch",
+            "Dinner",
+            "Seating",
+            "Table service"
+          ]
+        },
+        {
+          "amenities": [
+            "Restroom"
+          ]
+        },
+        {
+          "atmosphere": [
+            "Casual",
+            "Cozy"
+          ]
+        },
+        {
+          "crowd": [
+            "Groups",
+            "Tourists"
+          ]
+        },
+        {
+          "planning": [
+            "Accepts reservations"
+          ]
+        },
+        {
+          "payments": [
+            "Credit cards",
+            "Debit cards"
+          ]
+        },
+        {
+          "children": [
+            "Good for kids",
+            "High chairs",
+            "Kids' menu"
+          ]
+        },
+        {
+          "parking": [
+            "Free street parking"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible entrance",
+            "Wheelchair accessible parking lot",
+            "Wheelchair accessible seating"
+          ]
+        }
+      ],
+      "service_options": {
+        "dine_in": true,
+        "drive_through": true,
+        "no_contact_delivery": true
+      },
+      "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNrZAypIV6PQLrcNuCXmELxO4Sd83OOUr954qp0=w122-h92-k-no",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/_0L6uHicuxmXUVJSUGylr5-TYayXnp-fnpNaWpxalJyfV5KaV6KXnJ-rX6Dv6GYYmFngVxTlWFngGWYWEOhTlOxX6hyR6-pT4W8SnGJh7O8fWmRpalJYYGBbbmhkpJthaaSbrZuXDwCl1iDj"
+    }
+  }
+]

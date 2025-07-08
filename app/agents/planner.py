@@ -73,4 +73,4 @@ def load_planner_agent():
             **{**state.model_dump(), "plan": plan_summary, "itinerary": itinerary_json}
         )
 
-    return invoke  # Return the function directly
+    return invoke
