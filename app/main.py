@@ -4,12 +4,13 @@ from schemas.state import AgentState
 
 router = APIRouter()
 
-# 👉 Endpoint to test planner agent
-@router.post("/planner/test")
+
+@router.post("/planner")
 def test_planner_agent(state: AgentState):
-    planner = load_planner_agent()  # Direct function
-    result = planner(state)         # ✅ Correct: Direct function call, no .invoke
-    return result                   # FastAPI will auto-serialize AgentState to JSON
+    planner = load_planner_agent()
+    result = planner(state)
+    return result
+
 
 # 👉 FastAPI app setup
 app = FastAPI()

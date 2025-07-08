@@ -18,7 +18,7 @@ def load_orchestrator_agent():
         template = f.read()
 
     prompt = PromptTemplate.from_template(template)
-    llm = get_llm(model="gpt-4o", temperature=0.2)
+    llm = get_llm()
 
     chain = prompt | llm  # Updated to use RunnableSequence
 

@@ -1,0 +1,41 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.env
+venv/
+pycache/
+test/
+=======
+>>>>>>> 8a69c9a56f9ab39c75785f156a6572e5f2efe8a8
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+<<<<<<< HEAD
+next-env.d.ts
+=======
+next-env.d.ts
+>>>>>>> 05a64d0 (Add travel-website files)
+>>>>>>> 8a69c9a56f9ab39c75785f156a6572e5f2efe8a8
