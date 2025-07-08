@@ -1,4 +1,5 @@
 .env
 venv/
+app/venv/
 pycache/
 test/
